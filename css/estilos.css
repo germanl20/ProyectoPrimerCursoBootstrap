@@ -1,0 +1,159 @@
+/* COLORES
+TEXTO  #111111
+PRINCIPAL  #12AFAF
+SECUNDARIO  #009500
+*/
+
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 15px;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    color: #111111;
+}
+
+.bienvenidos{
+    background: url("../images/fondo-encabezado.jpg") no-repeat center top;
+    color: white;
+    background-size: cover;
+    height: 100vh;
+}
+
+.encabezado{
+    background: #111111;
+    color: white;
+    padding: .5rem 0;
+}
+
+.encabezado .container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.encabezado .logo img{
+    width: 150px;
+    height: auto;
+    fill: white; /* PARA CAMBIAR EL COLOR DE TEXTO DE ICONOS SVG */
+}
+
+.encabezado button{
+    border: none;
+    background: none;
+    color: white;
+    font-size: 1.8rem;
+    cursor: pointer;
+    padding: 0 .5rem;
+}
+
+.encabezado button:focus{
+    outline: none;
+}
+
+.texto-encabezado{
+    margin-top: 3.6rem;
+}
+
+.boton-buscar{
+    margin-left: auto; /* HAGO QUE TOME TODO EL ESPACIO RESTANTE QUE HAY EN LA IZQUIERDA, MOVIENDO LOS ELEMENTOS HACIA LA DERECHA */ 
+    margin-right: .5rem;
+}
+
+.bloque-buscar{
+    flex: 1 1 100%; /* PARA HACER QUE EL CONTENEDOR OCUPE EL 100% */
+}
+
+.contenedor-bloque-buscar{
+    display: flex;
+    height: 3rem;
+    margin: 1rem 0;
+}
+
+.encabezado .contenedor-bloque-buscar input:first-child{
+    border: none;
+    border-radius: 5px 0 0 5px;
+    padding: 1rem;
+    flex: 1 1 auto;
+}
+
+.encabezado .contenedor-bloque-buscar input[type="button"]{
+    width: 80px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    background-color: #12AFAF;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+}
+
+.menu-principal{
+    flex: 1 1 100%;
+}
+.menu-principal ul{
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.menu-principal ul a{
+    display: block;
+    padding: .8rem 0;
+    text-transform: uppercase;
+    color: white;
+    border-top: 1px solid #8c8888;
+    text-decoration: none;
+    transition: all .5s ease;
+}
+
+.menu-principal ul a:hover, .menu-principal li.active a{
+    color: #12AFAF;
+}
+
+.btn-primary{
+    background-color: #12AFAF;
+    border-color: transparent;
+    transition: all .3s ease-in-out;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active{
+    background-color: rgb(13, 136, 136);
+    border-color: transparent;
+}
+
+.flecha-bajar a{
+    color: white;
+    display: inline-block;
+    font-size: 3.5rem;
+    animation: flecha-animada 1.8s ease-in-out infinite; 
+}
+
+@keyframes flecha-animada{
+    from{
+        transform: translateY(0);
+    }
+
+    50%{
+        transform: translateY(6px);
+    }
+
+    to{
+        transform: translateY(0);
+    }
+}
+
+/* ----------- SECCION AGENCIA ----------- */
+
+.agencia{
+    background: #12AFAF;
+    color: white;
+}
+
+.agencia img{
+    width: 80%;
+}
